@@ -1,6 +1,10 @@
-<div>
+<body class="celeb">
+<div class="cartes">
     <h2><b>{{celebrity.name}}</b></h2>
-    <p> {{celebrity.occupation}}</p>
-    <p> {{celebrity.catchPhrase}}</p>
+    <p>Occupation : {{celebrity.occupation}}</p>
+    <p>CatchPhrase : {{celebrity.catchPhrase}}</p>
 </div>
 
+<button class="button"><a  href="/celebrities">Go back</a></button>
+<button class="button"><a  href="/celebrities/edit/{{celebrity._id}}">Edit</a></button>
+</body>

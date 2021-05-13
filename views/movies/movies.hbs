@@ -1,0 +1,15 @@
+<body class="movies">
+
+  <button class="button"><a href="/movies/new">Add a movie</a></button>
+
+{{#each movies}}
+<div class="cartes">
+
+        {{this.title}}
+
+<a href="/movies/edit/{{this._id}}">Edit</a>
+<a href="/movies/movie-details/{{this._id}}">Details</a>
+<a href="/movies/delete/{{this._id}}">Delete</a>
+</div>
+{{/each}}
+</body>

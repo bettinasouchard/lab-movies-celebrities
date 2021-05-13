@@ -59,7 +59,7 @@ router.get("/edit/:id", (req, res, next) => {
 router.post("/:id", (req, res, next) => {
     celebrityModel.findByIdAndUpdate(req.params.id, req.body)
       .then(() => {
-        res.redirect("celebrities/celebrity-details/:id");
+        res.redirect("/celebrities/celebrity-details/" + req.params.id) 
       })
       .catch(next);
   });

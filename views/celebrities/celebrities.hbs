@@ -1,11 +1,14 @@
+<body class="celeb">
+  <button class="button"><a href="/celebrities/new">Add a celebrity</a></button>
 
-{{#each celebrities}}
-<ul>
-    <li>
-        {{this.name}}
-    </li>
-</ul>
-<a href="/celebrities/edit/{{this._id}}">Edit</a>
-<a href="/celebrities/celebrity-details/{{this._id}}">Details</a>
-<a href="/celebrities/delete/{{this._id}}">Delete</a>
-{{/each}}
+  {{#each celebrities}}
+    <div class="cartes">
+      <div>
+        <h2>{{this.name}}</h2>
+
+        <a href="/celebrities/edit/{{this._id}}">Edit</a>
+        <a href="/celebrities/celebrity-details/{{this._id}}">Details</a>
+        <a href="/celebrities/delete/{{this._id}}">Delete</a></div>
+    </div>
+  {{/each}}
+</body>
